@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-display: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-arabic: "Amiri", "Noto Naskh Arabic", serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  --color-e9: #114A18;
+  --color-e95: #0A2E0F;
+  --color-eg: #165B1E;
+  --color-gold: #E59A14;
+  --color-gold4: #F2AE2E;
+  --color-cream: #FAF7F0;
+  --color-sand: #F2ECE1;
+  --color-lemon-50: #FAFDE6;
+  --color-lemon-100: #F3F9C4;
+  --color-lemon-200: #E8F3A0;
+  --color-lemon-300: #D8EC6E;
+  --color-lemon-400: #C6E04A;
+  --color-lemon-500: #A9CC2B;
+}
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  background-color: #FAF7F0;
+  background-image: 
+    radial-gradient(at 15% 15%, rgba(22, 91, 30, 0.055), transparent 50%),
+    radial-gradient(at 85% 25%, rgba(198, 224, 74, 0.2), transparent 50%),
+    radial-gradient(at 10% 75%, rgba(198, 224, 74, 0.14), transparent 45%),
+    radial-gradient(at 60% 95%, rgba(229, 154, 20, 0.07), transparent 50%);
+  background-attachment: fixed;
+}
+
+.lattice {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23E59A14' stroke-opacity='0.14'%3E%3Cpath d='M30 0L60 30L30 60L0 30Z'/%3E%3Ccircle cx='30' cy='30' r='11'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.lattice-light {
+  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23D8EC6E' stroke-opacity='0.18'%3E%3Cpath d='M30 0L60 30L30 60L0 30Z'/%3E%3Ccircle cx='30' cy='30' r='11'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* Stylish Gradient Typography */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F9E79F 0%, #F2AE2E 40%, #E59A14 80%, #B7791F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-lemon-gradient {
+  background: linear-gradient(135deg, #FAFDE6 0%, #D8EC6E 50%, #A9CC2B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-emerald-gradient {
+  background: linear-gradient(135deg, #0A2E0F 0%, #114A18 60%, #165B1E 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Calligraphic typography helper */
+.font-arabic {
+  font-family: var(--font-arabic), "Noto Naskh Arabic", serif;
+}
+
+.font-editorial {
+  font-family: var(--font-display), "Playfair Display", Georgia, serif;
+}
+
+[dir="rtl"] {
+  font-family: var(--font-arabic), var(--font-sans);
+}
